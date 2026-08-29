@@ -12,7 +12,8 @@ export function Hero() {
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--accent)_0%,_transparent_70%)] opacity-20" aria-hidden="true" />
       
       <div className="relative max-w-7xl mx-auto w-full">
-        <div className="text-center lg:text-left">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-16">
+          <div className="text-center lg:text-left flex-1">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -115,11 +116,35 @@ export function Hero() {
           </motion.div>
         </div>
 
+          <motion.div
+            initial={{ opacity: 0, x: 30 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, ease: 'easeOut', delay: 0.7 }}
+            className="hidden lg:block flex-1 flex items-center justify-center"
+          >
+            <div className="relative w-full max-w-lg">
+              <div className="aspect-[4/3] rounded-3xl overflow-hidden bg-gradient-to-br from-accent/10 to-transparent border border-default">
+                <img
+                  src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&h=600&fit=crop"
+                  alt="Dixit Saini - Android Developer"
+                  className="w-full h-full object-cover opacity-90 hover:opacity-100 transition-opacity duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent" aria-hidden="true" />
+              </div>
+              <div className="absolute -bottom-6 -right-6 lg:-bottom-8 lg:-right-8 w-40 h-40 lg:w-48 lg:h-48 rounded-2xl bg-secondary/80 backdrop-blur-sm border border-default flex items-center justify-center shadow-xl">
+                <div className="text-center p-4">
+                  <div className="text-3xl lg:text-4xl font-bold text-accent">5+</div>
+                  <div className="text-xs lg:text-sm text-secondary">Apps on Play Store</div>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1, ease: 'easeOut', delay: 0.6 }}
-          className="mt-16 lg:mt-20 relative"
+          className="mt-16 lg:mt-0 lg:absolute lg:bottom-0 lg:left-1/2 lg:-translate-x-1/2 lg:translate-y-1/2 relative z-10"
         >
           <div className="relative mx-auto max-w-4xl">
             <div className="aspect-square max-w-md mx-auto lg:max-w-none lg:mx-0 relative">
@@ -154,6 +179,7 @@ export function Hero() {
             </div>
           </div>
         </motion.div>
+      </div>
       </div>
 
       <motion.div

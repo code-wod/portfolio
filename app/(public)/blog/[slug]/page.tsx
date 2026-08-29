@@ -6,7 +6,7 @@ import { Header } from '@/components/Layout/Header';
 import { Footer } from '@/components/Layout/Footer';
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
-import { ArrowLeft, ArrowRight, Share2, Twitter, Link as LinkIcon, Copy, Clock, Eye, Tag, ChevronDown, Check, ExternalLink } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Share2, Bird, Link as LinkIcon, Copy, Clock, Eye, Tag, ChevronDown, Check, ExternalLink } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
@@ -591,7 +591,7 @@ export default function BlogDetailPage() {
                   <div className="flex items-center gap-4">
                     <span className="text-sm font-medium text-secondary">Share:</span>
                     <button onClick={shareOnTwitter} className="p-2 rounded-lg text-tertiary hover:text-accent hover:bg-tertiary transition-colors" aria-label="Share on Twitter">
-                      <Twitter className="h-5 w-5" />
+                      <Bird className="h-5 w-5" />
                     </button>
                     <button onClick={shareOnLinkedIn} className="p-2 rounded-lg text-tertiary hover:text-accent hover:bg-tertiary transition-colors" aria-label="Share on LinkedIn">
                       <LinkIcon className="h-5 w-5" />

@@ -104,7 +104,7 @@ export default function ContactPage() {
   const socialLinks = [
     { icon: LinkIcon, label: 'LinkedIn', href: 'https://linkedin.com/in/dixitsaini2' },
     { icon: GitFork, label: 'GitHub', href: 'https://github.com/dixit' },
-    { icon: Twitter, label: 'Twitter', href: 'https://twitter.com/dixitsaini' },
+    { icon: Bird, label: 'Twitter', href: 'https://twitter.com/dixitsaini' },
     { icon: Mail, label: 'Email', href: 'mailto:dixit.appinnovator@gmail.com' },
   ];
 
